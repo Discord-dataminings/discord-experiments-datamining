@@ -2,6 +2,82 @@
   {
     "data": {
       "type": "guild",
+      "title": "Guild Role Subscriptions",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create Guild Role Subscriptions"
+      ],
+      "buckets": [0, 1],
+      "id": "2021-06_guild_role_subscriptions",
+      "hash": 1405831955
+    },
+    "rollout": {
+      "hashKey": 1405831955,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 4750
+                },
+                {
+                  "min": 4750,
+                  "max": 5200
+                },
+                {
+                  "min": 5200,
+                  "max": 5700
+                },
+                {
+                  "min": 5700,
+                  "max": 6200
+                },
+                {
+                  "min": 6200,
+                  "max": 7200
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 7200,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1405831955,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Exposure tracking for Watch Together (do not override)",
       "description": ["Control"],
       "buckets": [0],
@@ -14,7 +90,7 @@
       "populations": [
         {
           "buckets": {
-            "1": {
+            "-1": {
               "rollout": [
                 {
                   "min": 0,
