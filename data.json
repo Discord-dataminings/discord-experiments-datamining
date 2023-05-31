@@ -21,7 +21,7 @@
               "rollout": [
                 {
                   "min": 0,
-                  "max": 1200
+                  "max": 4750
                 },
                 {
                   "min": 4750,
@@ -58,6 +58,36 @@
             }
           ]
         },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Exposure tracking for Watch Together (do not override)",
+      "description": ["Control"],
+      "buckets": [0],
+      "id": "2021-09_watch_together_rollout",
+      "hash": 3607703918
+    },
+    "rollout": {
+      "hashKey": 3607703918,
+      "revision": 0,
+      "populations": [
         {
           "buckets": {
             "-1": {
