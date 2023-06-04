@@ -42,7 +42,7 @@ async function replaceRolloutValue() {
 replaceRolloutValue();
 
 const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
+  auth: process.env.ACCESS_TOKEN,
 });
 
 const main = async () => {
