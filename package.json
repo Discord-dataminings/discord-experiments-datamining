@@ -1,0 +1,18 @@
+{
+  "name": "discord-experiments-datamining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^19.0.11",
+    "discord-experiments": "^1.1.0",
+    "js-base64": "^3.7.5",
+    "prettier": "^2.8.8"
+  }
+}

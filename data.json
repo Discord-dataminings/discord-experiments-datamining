@@ -1911,89 +1911,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Stage Boosting",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
-      "id": "2023-02_stage_boosting",
-      "hash": 1816004721
-    },
-    "rollout": {
-      "hashKey": 1816004721,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 500
-                },
-                {
-                  "min": 500,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 9500
-                },
-                {
-                  "min": 9500,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1816004721,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Burst Reactions",
       "description": [
         "Control",
@@ -2100,6 +2017,89 @@
           "401220874742661121"
         ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Stage Boosting",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-02_stage_boosting",
+      "hash": 1816004721
+    },
+    "rollout": {
+      "hashKey": 1816004721,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 500
+                },
+                {
+                  "min": 500,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 9500
+                },
+                {
+                  "min": 9500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1816004721,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
@@ -2559,7 +2559,7 @@
       "populations": [
         {
           "buckets": {
-            "1": {
+            "-1": {
               "rollout": [
                 {
                   "min": 0,
@@ -3418,7 +3418,8 @@
           "1105952651960668323",
           "1105953713673228358",
           "1105953777212739716",
-          "816784679717044276"
+          "816784679717044276",
+          "1114255235704180746"
         ]
       }
     }
@@ -3451,8 +3452,43 @@
         }
       ],
       "overrides": {
-        "1": ["816784679717044276", "874345844743213126", "840296607785287763"]
+        "1": [
+          "816784679717044276",
+          "874345844743213126",
+          "840296607785287763",
+          "1113529666989469708"
+        ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "[ADMIN] Make server guide optional",
+      "description": ["Control", "Treatment 1: Optional"],
+      "buckets": [0, 1],
+      "id": "2023-05_optional_onboarding_home_admin",
+      "hash": 695300504
+    },
+    "rollout": {
+      "hashKey": 695300504,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
@@ -3498,14 +3534,22 @@
     },
     "rollout": {
       "hashKey": 631733804,
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
-            "-1": {
+            "1": {
               "rollout": [
                 {
                   "min": 0,
+                  "max": 500
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 500,
                   "max": 10000
                 }
               ]
@@ -3537,7 +3581,7 @@
     },
     "rollout": {
       "hashKey": 4261225962,
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
@@ -3724,7 +3768,7 @@
             {
               "type": "guild_member_count_range",
               "min_id": 1,
-              "max_id": 50
+              "max_id": 200
             }
           ]
         }
@@ -3804,6 +3848,19 @@
       "hashKey": 3045613474,
       "revision": 0,
       "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
         {
           "buckets": {
             "-1": {
