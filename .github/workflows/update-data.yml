@@ -24,7 +24,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "19"
-
+      - name: Init the package.json
+        run: npm init -y
       - name: Install Dependencies
         run: npm install
 
