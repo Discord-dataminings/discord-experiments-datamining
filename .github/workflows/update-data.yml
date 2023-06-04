@@ -2,7 +2,7 @@ name: Update Script
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/1 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Install Required Packages
-        run: npm install @octokit/rest discord-experiments prettier
+        run: npm install js-base64 @octokit/rest discord-experiments prettier
 
       - name: Run Update Script
         run: node update.js
