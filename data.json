@@ -1911,6 +1911,89 @@
   {
     "data": {
       "type": "guild",
+      "title": "Stage Boosting",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-02_stage_boosting",
+      "hash": 1816004721
+    },
+    "rollout": {
+      "hashKey": 1816004721,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 500
+                },
+                {
+                  "min": 500,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 9500
+                },
+                {
+                  "min": 9500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1816004721,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Burst Reactions",
       "description": [
         "Control",
@@ -2017,89 +2100,6 @@
           "401220874742661121"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Stage Boosting",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
-      "id": "2023-02_stage_boosting",
-      "hash": 1816004721
-    },
-    "rollout": {
-      "hashKey": 1816004721,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 500
-                },
-                {
-                  "min": 500,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 9500
-                },
-                {
-                  "min": 9500,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1816004721,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
     }
   },
   {
