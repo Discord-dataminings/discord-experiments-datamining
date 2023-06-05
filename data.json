@@ -3843,8 +3843,53 @@
     },
     "rollout": {
       "hashKey": 3045613474,
-      "revision": 0,
+      "revision": 1,
       "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 100,
+                  "max": 200
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 200,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3045613474,
+              "target": 10000
+            }
+          ]
+        },
         {
           "buckets": {
             "-1": {
