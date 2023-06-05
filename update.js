@@ -1,4 +1,3 @@
-const { Octokit } = require("@octokit/rest");
 const { Base64 } = require("js-base64");
 const fs = require("fs");
 const prettier = require('prettier');
@@ -41,35 +40,5 @@ async function replaceRolloutValue() {
 
 replaceRolloutValue();
 
-const octokit = new Octokit({
-  auth: process.env.ACCESS_TOKEN,
-});
-
-const main = async () => {
-  try {
-    const content = fs.readFileSync("./data.json", "utf-8");
-    const contentEncoded = Base64.encode(content);
-
-    const { data } = await octokit.repos.createOrUpdateFileContents({
-      owner: "Discord-dataminings",
-      repo: "discord-experiments-datamining",
-      path: "data.json",
-      message: "✅ Data updated",
-      content: contentEncoded,
-      committer: {
-        name: `github-actions[bot]`,
-        email: "github-actions[bot]@users.noreply.github.com",
-      },
-      author: {
-        name: "github-actions[bot]",
-        email: "github-actions[bot]@users.noreply.github.com",
-      },
-    });
-
-    console.log(data);
-  } catch (err) {
-    console.error(err);
-  }
-};
 
 main();
