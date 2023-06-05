@@ -12,7 +12,7 @@ async function fetchRollouts() {
     throw new Error(`Failed to fetch rollouts: ${error.message}`);
   }
 }
-
+// Saves the data //
 async function replaceRolloutValue() {
   try {
     const rollouts = await fetchRollouts();
@@ -39,6 +39,3 @@ async function replaceRolloutValue() {
 }
 
 replaceRolloutValue();
-
-
-main();
