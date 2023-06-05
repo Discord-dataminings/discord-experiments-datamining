@@ -2595,7 +2595,7 @@
     },
     "rollout": {
       "hashKey": 808859253,
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
@@ -2617,34 +2617,10 @@
         },
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 500,
-                  "max": 1000
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "min": 1000,
-                  "max": 1500
-                }
-              ]
-            },
             "3": {
               "rollout": [
                 {
-                  "min": 1500,
-                  "max": 2000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 2000,
+                  "min": 0,
                   "max": 10000
                 }
               ]
@@ -3657,6 +3633,36 @@
       "overrides": {
         "1": ["651595875897835540"]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Modify Clyde's Personality",
+      "description": ["Control", "Treatment 1: enable personality setting"],
+      "buckets": [0, 1],
+      "id": "2023-05_clyde_ai_guild_personality",
+      "hash": 2701598838
+    },
+    "rollout": {
+      "hashKey": 2701598838,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
