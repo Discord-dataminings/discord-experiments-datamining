@@ -3457,6 +3457,25 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 695300504,
+              "target": 100
+            }
+          ]
+        },
+        {
+          "buckets": {
             "-1": {
               "rollout": [
                 {
