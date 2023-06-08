@@ -3869,7 +3869,7 @@
     },
     "rollout": {
       "hashKey": 3045613474,
-      "revision": 1,
+      "revision": 2,
       "populations": [
         {
           "buckets": {
@@ -3896,13 +3896,17 @@
                 {
                   "min": 100,
                   "max": 200
+                },
+                {
+                  "min": 1100,
+                  "max": 2000
                 }
               ]
             },
             "-1": {
               "rollout": [
                 {
-                  "min": 200,
+                  "min": 2000,
                   "max": 10000
                 }
               ]
