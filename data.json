@@ -3802,6 +3802,9 @@
           },
           "filters": [
             {
+              "type": "guild_has_vanity_url"
+            },
+            {
               "type": "guild_member_count_range",
               "min_id": 1,
               "max_id": 200
