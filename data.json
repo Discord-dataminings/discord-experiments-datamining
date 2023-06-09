@@ -3794,32 +3794,6 @@
             "1": {
               "rollout": [
                 {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_vanity_url"
-            },
-            {
-              "type": "guild_member_count_range",
-              "min_id": 1,
-              "max_id": 200
-            },
-            {
-              "type": "guild_ids",
-              "ids": ["119138216639987713"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
                   "min": 100,
                   "max": 200
                 },
