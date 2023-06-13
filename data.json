@@ -3688,6 +3688,77 @@
   {
     "data": {
       "type": "guild",
+      "title": "Remove Reactions by Type",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-06_remove_reactions_by_type",
+      "hash": 4195647747
+    },
+    "rollout": {
+      "hashKey": 4195647747,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY_CANARY"]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 4195647747,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY_CANARY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Community Endless Invites",
       "description": [
         "Control",
