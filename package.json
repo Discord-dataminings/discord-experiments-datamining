@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@octokit/rest": "^19.0.12",
+    "@octokit/rest": "^19.0.13",
     "discord-experiments": "^1.1.0",
     "js-base64": "^3.7.5",
     "prettier": "^2.8.8"
