@@ -2314,6 +2314,55 @@
   {
     "data": {
       "type": "guild",
+      "title": "Enables dropdown selections from onboarding prompts",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2023-02_onboardingdropdowns",
+      "hash": 3884904940
+    },
+    "rollout": {
+      "hashKey": 3884904940,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3884904940,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Voice Channel Status Guild Experiment",
       "description": [
         "Control",
@@ -2376,55 +2425,6 @@
           "1116006991505137734"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Enables dropdown selections from onboarding prompts",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
-      "id": "2023-02_onboardingdropdowns",
-      "hash": 3884904940
-    },
-    "rollout": {
-      "hashKey": 3884904940,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 3884904940,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
     }
   },
   {
