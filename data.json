@@ -3111,6 +3111,24 @@
       "populations": [
         {
           "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["CREATOR_MONETIZABLE_DISABLED"]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "1": {
               "rollout": [
                 {
@@ -3120,11 +3138,7 @@
                 {
                   "min": 2500,
                   "max": 3000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
+                },
                 {
                   "min": 3000,
                   "max": 10000
