@@ -2105,39 +2105,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Application Recommendation Server Checklist Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Show recommendation to add apps in new server checklist"
-      ],
-      "buckets": [0, 1],
-      "id": "2023-02_app_recommendations_server_checklist",
-      "hash": 3320756132
-    },
-    "rollout": {
-      "hashKey": 3320756132,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Channel Summaries Guild Experiment",
       "description": [
         "Control",
@@ -2187,6 +2154,39 @@
               "guild_features": ["SUMMARIES_ENABLED"]
             }
           ]
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Application Recommendation Server Checklist Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Show recommendation to add apps in new server checklist"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_app_recommendations_server_checklist",
+      "hash": 3320756132
+    },
+    "rollout": {
+      "hashKey": 3320756132,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
         }
       ],
       "overrides": {}
@@ -2939,6 +2939,73 @@
   {
     "data": {
       "type": "guild",
+      "title": "Safety check in guild settings",
+      "description": ["Control", "Treatment 1: Show safety check in settings"],
+      "buckets": [0, 1],
+      "id": "2023-03_guild_safety_settings",
+      "hash": 1640064366
+    },
+    "rollout": {
+      "hashKey": 1640064366,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": ["1080899969243943072", "763838479293349899"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "MJ Chat Bar enabled guilds",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-03_mj_chat_bar_guild",
+      "hash": 2182959876
+    },
+    "rollout": {
+      "hashKey": 2182959876,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Improved Message Markdown Guild Experiment",
       "description": [
         "Control",
@@ -3009,73 +3076,6 @@
           },
           "filters": []
         },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Safety check in guild settings",
-      "description": ["Control", "Treatment 1: Show safety check in settings"],
-      "buckets": [0, 1],
-      "id": "2023-03_guild_safety_settings",
-      "hash": 1640064366
-    },
-    "rollout": {
-      "hashKey": 1640064366,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": ["1080899969243943072", "763838479293349899"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "MJ Chat Bar enabled guilds",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
-      "id": "2023-03_mj_chat_bar_guild",
-      "hash": 2182959876
-    },
-    "rollout": {
-      "hashKey": 2182959876,
-      "revision": 0,
-      "populations": [
         {
           "buckets": {
             "-1": {
