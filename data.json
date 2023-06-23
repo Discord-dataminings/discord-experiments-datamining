@@ -3443,8 +3443,26 @@
     },
     "rollout": {
       "hashKey": 2710924848,
-      "revision": 0,
+      "revision": 1,
       "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["MEMBER_SAFETY_PAGE_ROLLOUT"]
+            }
+          ]
+        },
         {
           "buckets": {
             "-1": {
