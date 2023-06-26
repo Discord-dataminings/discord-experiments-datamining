@@ -1000,6 +1000,58 @@
   {
     "data": {
       "type": "guild",
+      "title": "Raid Alerts",
+      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
+      "buckets": [0, 1],
+      "id": "2022-10_guild_raid_messaging",
+      "hash": 3636231100
+    },
+    "rollout": {
+      "hashKey": 3636231100,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": [
+          "816784679717044276",
+          "763838479293349899",
+          "435572461912719360",
+          "1044378460296061008",
+          "876918412369088582",
+          "1044721355821678662",
+          "1034492236483792958",
+          "912834371034181642",
+          "809846768074227723",
+          "999116324842246224",
+          "987012965834297405",
+          "942897714956472401",
+          "169256939211980800",
+          "987122927000494131"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Text-In-Stage",
       "description": ["Control", "Treatment 1: Enable Text-In-Stage"],
       "buckets": [0, 1],
@@ -1066,58 +1118,6 @@
         }
       ],
       "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Raid Alerts",
-      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
-      "buckets": [0, 1],
-      "id": "2022-10_guild_raid_messaging",
-      "hash": 3636231100
-    },
-    "rollout": {
-      "hashKey": 3636231100,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": [
-          "816784679717044276",
-          "763838479293349899",
-          "435572461912719360",
-          "1044378460296061008",
-          "876918412369088582",
-          "1044721355821678662",
-          "1034492236483792958",
-          "912834371034181642",
-          "809846768074227723",
-          "999116324842246224",
-          "987012965834297405",
-          "942897714956472401",
-          "169256939211980800",
-          "987122927000494131"
-        ]
-      }
     }
   },
   {
