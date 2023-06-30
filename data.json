@@ -2192,74 +2192,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Voice Channel Status Guild Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-        "Treatment 2: A/A test, identical to treatment 1"
-      ],
-      "buckets": [0, 1, 2],
-      "id": "2023-02_voice_channel_statuses",
-      "hash": 2809294122
-    },
-    "rollout": {
-      "hashKey": 2809294122,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 50,
-                  "max": 100
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "min": 100,
-                  "max": 150
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 150,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_id": 0,
-              "max_id": 51
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": [
-          "890883112500854804",
-          "887867262839705651",
-          "993957185493160057",
-          "705666251560583168",
-          "1115745220575887491",
-          "1095810146761973830",
-          "300748021300330497",
-          "1116006991505137734",
-          "172056827335409665"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Automod Server Policy",
       "description": [
         "Control",
@@ -2355,6 +2287,74 @@
         }
       ],
       "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Voice Channel Status Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+        "Treatment 2: A/A test, identical to treatment 1"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2023-02_voice_channel_statuses",
+      "hash": 2809294122
+    },
+    "rollout": {
+      "hashKey": 2809294122,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 50,
+                  "max": 100
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "min": 100,
+                  "max": 150
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 150,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 0,
+              "max_id": 51
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": [
+          "890883112500854804",
+          "887867262839705651",
+          "993957185493160057",
+          "705666251560583168",
+          "1115745220575887491",
+          "1095810146761973830",
+          "300748021300330497",
+          "1116006991505137734",
+          "172056827335409665"
+        ]
+      }
     }
   },
   {
