@@ -4200,5 +4200,55 @@
       ],
       "overrides": {}
     }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Lottie Sticker Uploads",
+      "description": ["Control", "Treatment 1: Allow Lottie sticker uploads"],
+      "buckets": [0, 1],
+      "id": "2021-07_stickers_lottie_upload",
+      "hash": 2009396848
+    },
+    "rollout": {
+      "hashKey": 2009396848,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["PARTNERED", "VERIFIED"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["733525406203773049"]
+      }
+    }
   }
 ]
