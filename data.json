@@ -3776,6 +3776,38 @@
   {
     "data": {
       "type": "guild",
+      "title": "Inventory Guild Settings Experiment",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-06_inventory_guild_setting",
+      "hash": 3883768363
+    },
+    "rollout": {
+      "hashKey": 3883768363,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["937605284065607711"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Remove Reactions by Type",
       "description": ["Control", "Treatment 1: Enabled"],
       "buckets": [0, 1],
