@@ -1697,52 +1697,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Voice Messages",
-      "description": ["Control", "Treatment 1: Can send voice messages"],
-      "buckets": [0, 1],
-      "id": "2023-01_voice_messages",
-      "hash": 968663312
-    },
-    "rollout": {
-      "hashKey": 968663312,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "997637077099364383",
-          "743213213142876203",
-          "943265993613008967",
-          "809943708283830302",
-          "281683040739262465",
-          "1083177865400553502",
-          "877393448309772319",
-          "855181690824425512",
-          "814196235741167637",
-          "409190184744255490",
-          "1096494224343584858",
-          "1070131921218174976",
-          "308304292006330369"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Server Subscriptions IAP",
       "description": [
         "Control",
