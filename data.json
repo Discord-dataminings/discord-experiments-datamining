@@ -4,10 +4,11 @@
       "type": "guild",
       "title": "Guild Role Subscriptions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscriptions"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2021-06_guild_role_subscriptions",
       "hash": 1405831955
     },
@@ -79,8 +80,8 @@
     "data": {
       "type": "guild",
       "title": "Exposure tracking for Watch Together (do not override)",
-      "description": ["Control"],
-      "buckets": [0],
+      "description": ["Not Eligible", "Control Bucket"],
+      "buckets": [-1, 0],
       "id": "2021-09_watch_together_rollout",
       "hash": 3607703918
     },
@@ -109,8 +110,12 @@
     "data": {
       "type": "guild",
       "title": "Student hub study group",
-      "description": ["Control", "Treatment 1: Enables study group sidebar"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables study group sidebar"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2021-10_study_group",
       "hash": 4030301365
     },
@@ -159,10 +164,11 @@
       "type": "guild",
       "title": "Member Verification Manual Approval",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable manual approval for membership verification"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2021-11_member_verification_manual_approval",
       "hash": 4089758233
     },
@@ -191,8 +197,12 @@
     "data": {
       "type": "guild",
       "title": "Hub Events",
-      "description": ["Control", "Treatment 1: Show Hub Events List"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show Hub Events List"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2021-11_hub_events",
       "hash": 1107510295
     },
@@ -241,10 +251,11 @@
       "type": "guild",
       "title": "Guild Role Subscription Multigroup",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-01_guild_role_subscription_multigroup",
       "hash": 2201448248
     },
@@ -281,10 +292,11 @@
       "type": "guild",
       "title": "Guild Role Subscription Trials",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscription Trials"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-01_guild_role_subscription_trials",
       "hash": 4200595067
     },
@@ -333,11 +345,12 @@
       "type": "guild",
       "title": "Home Tab Guild",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Check User as well",
         "Treatment 2: Force on"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [-1, 0, 1, 2],
       "id": "2022-01_home_tab_guild",
       "hash": 3832113202
     },
@@ -370,10 +383,11 @@
       "type": "guild",
       "title": "Guild Audit Log - Guild Feature Flag",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Guild Audit Log 2.0 for guild"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-02_guild_audit_log_guild",
       "hash": 1412337990
     },
@@ -405,10 +419,11 @@
       "type": "guild",
       "title": "Guild Role Subscription Analytics",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to view analytics for role subscriptions"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-03_role_subscription_analytics_portal",
       "hash": 3510816342
     },
@@ -453,10 +468,11 @@
       "type": "guild",
       "title": "Guild Role Subscription Purchase Feedback Loop",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
       "hash": 1990672009
     },
@@ -488,10 +504,11 @@
       "type": "guild",
       "title": "Guild Role Subscription Mobile Web",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables role subscription mobile web purchase page"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-05_mobile_web_role_subscription_purchase_page",
       "hash": 4190408036
     },
@@ -521,11 +538,12 @@
       "type": "guild",
       "title": "Show the button to join the admin server in community overview server settings page",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show button if requirements met",
         "Treatment 2: Bypass requirements"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [-1, 0, 1, 2],
       "id": "2022-06_community_admin_server",
       "hash": 3282315774
     },
@@ -566,8 +584,8 @@
     "data": {
       "type": "guild",
       "title": "Free Sticker Slots Design Updates",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2022-06_free_sticker_slots_design_updates",
       "hash": 258580919
     },
@@ -599,12 +617,13 @@
       "type": "guild",
       "title": "Guild Role Subscription Max Tiers",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 4: Enables {n} maximum published tiers",
         "Treatment 5: Enables {n} maximum published tiers",
         "Treatment 6: Enables {n} maximum published tiers"
       ],
-      "buckets": [0, 4, 5, 6],
+      "buckets": [-1, 0, 4, 5, 6],
       "id": "2022-07_guild_role_subscriptions_variable_max_tiers",
       "hash": 179711638
     },
@@ -642,8 +661,8 @@
     "data": {
       "type": "guild",
       "title": "Voice in Threads",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
+      "buckets": [-1, 0, 1],
       "id": "2022-07_voice_in_threads",
       "hash": 944104242
     },
@@ -677,8 +696,12 @@
     "data": {
       "type": "guild",
       "title": "Report Raids",
-      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Reporting Of Raids"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-07_report_raids",
       "hash": 1055563741
     },
@@ -726,8 +749,12 @@
     "data": {
       "type": "guild",
       "title": "Report Raids",
-      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Reporting Of Raids"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-07_invites_disabled",
       "hash": 3683063649
     },
@@ -790,10 +817,11 @@
       "type": "guild",
       "title": "Creator Monetization Onboarding v2",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-09_creator_monetization_raven",
       "hash": 3723449866
     },
@@ -846,10 +874,11 @@
       "type": "guild",
       "title": "Creator Store Pages ",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to have store page"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-10_creator_store_pages",
       "hash": 24149521
     },
@@ -902,14 +931,14 @@
       "type": "guild",
       "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Holdout",
         "Treatment 1: NMX Core",
         "Treatment 2: NMX Core + Home",
         "Treatment 3: NMX Core + Highlights",
         "Treatment 4: Home"
       ],
-      "buckets": [0, 0, 1, 2, 3, 4],
+      "buckets": [-1, 0, 1, 2, 3, 4],
       "id": "2022-10_communities_multi",
       "hash": 2457903107
     },
@@ -1001,8 +1030,12 @@
     "data": {
       "type": "guild",
       "title": "Raid Alerts",
-      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Reporting Of Raids"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-10_guild_raid_messaging",
       "hash": 3636231100
     },
@@ -1054,10 +1087,11 @@
       "type": "guild",
       "title": "Creator Monetization Onboarding Waitlist",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Guilds to (possibly) see the waitlist"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-11_creator_monetization_onboarding_waitlist",
       "hash": 987884927
     },
@@ -1106,10 +1140,11 @@
       "type": "guild",
       "title": "Automod Non-Community Guilds Release",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Non-Community Guilds Release"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-11_automod_non_community_guilds_release",
       "hash": 2608013421
     },
@@ -1218,8 +1253,8 @@
     "data": {
       "type": "guild",
       "title": "Disable mass mentions for communities by default",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2022-11_default_disable_mass_mention",
       "hash": 2462216785
     },
@@ -1284,10 +1319,11 @@
       "type": "guild",
       "title": "Mobile Guild Role Subscription Team Setup",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to allow payout team setup on mobile"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2022-12_mobile_guild_role_subscription_team_setup",
       "hash": 3313601281
     },
@@ -1326,8 +1362,12 @@
     "data": {
       "type": "guild",
       "title": "Automod Mention Raid Limit",
-      "description": ["Control", "Treatment 1: Automod Mention Raid Limit"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Automod Mention Raid Limit"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-12_mention_raid_limit",
       "hash": 1318029053
     },
@@ -1398,8 +1438,12 @@
     "data": {
       "type": "guild",
       "title": "Home New Header",
-      "description": ["Control", "Treatment 1: New Header"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: New Header"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-12_home_header_redesign",
       "hash": 3405402067
     },
@@ -1456,8 +1500,8 @@
     "data": {
       "type": "guild",
       "title": "Increased activity view for Forums, per guild",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2023-01_forums_activity_2_guild",
       "hash": 4081692393
     },
@@ -1503,8 +1547,12 @@
     "data": {
       "type": "guild",
       "title": "Automod Mention Raid Notice",
-      "description": ["Control", "Treatment 1: Automod Mention Raid Notice"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Automod Mention Raid Notice"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-01_mention_raid_notice",
       "hash": 805661295
     },
@@ -1558,8 +1606,8 @@
     "data": {
       "type": "guild",
       "title": "Forum non-community",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
+      "buckets": [-1, 0, 1],
       "id": "2023-01_forums_non_community",
       "hash": 1446479414
     },
@@ -1604,8 +1652,12 @@
     "data": {
       "type": "guild",
       "title": "Shared Canvas",
-      "description": ["Control", "Treatment 1: Enable Shared Canvas"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Shared Canvas"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-01_shared_canvas",
       "hash": 280866660
     },
@@ -1699,10 +1751,11 @@
       "type": "guild",
       "title": "Server Subscriptions IAP",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Subscriptions IAP"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_server_subscriptions_iap",
       "hash": 295820329
     },
@@ -1745,10 +1798,11 @@
       "type": "guild",
       "title": "[ADMIN] Home as a community onboarding surface",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_onboarding_home_admin",
       "hash": 748249793
     },
@@ -1801,12 +1855,13 @@
       "type": "guild",
       "title": "Burst Reactions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled",
         "Treatment 2: Tab UI",
         "Treatment 4: Free Bursts"
       ],
-      "buckets": [0, 1, 2, 4],
+      "buckets": [-1, 0, 1, 2, 4],
       "id": "2023-02_burst_reaction_guild_experiment",
       "hash": 2014775304
     },
@@ -1911,8 +1966,8 @@
     "data": {
       "type": "guild",
       "title": "Stage Boosting",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_stage_boosting",
       "hash": 1816004721
     },
@@ -1995,11 +2050,12 @@
       "type": "guild",
       "title": "Channel Summaries Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable channel summaries",
         "Treatment 2: Enable channel summaries GA"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-02_p13n_summarization",
       "hash": 1504498621
     },
@@ -2052,10 +2108,11 @@
       "type": "guild",
       "title": "Application Recommendation Server Checklist Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show recommendation to add apps in new server checklist"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_app_recommendations_server_checklist",
       "hash": 3320756132
     },
@@ -2084,8 +2141,12 @@
     "data": {
       "type": "guild",
       "title": "Automod Custom Message",
-      "description": ["Control", "Treatment 1: Automod Custom Message"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Automod Custom Message"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_automod_custom_message",
       "hash": 511273769
     },
@@ -2153,11 +2214,12 @@
       "type": "guild",
       "title": "Automod Server Policy",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Server Policy",
         "Treatment 10: Automod Server Policy Rules Summarization"
       ],
-      "buckets": [0, 1, 10],
+      "buckets": [-1, 0, 1, 10],
       "id": "2023-02_free_form",
       "hash": 2001176293
     },
@@ -2203,8 +2265,8 @@
     "data": {
       "type": "guild",
       "title": "Enables dropdown selections from onboarding prompts",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_onboardingdropdowns",
       "hash": 3884904940
     },
@@ -2253,11 +2315,12 @@
       "type": "guild",
       "title": "Voice Channel Status Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable viewing and setting voice channel statuses for guild",
         "Treatment 2: A/A test, identical to treatment 1"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-02_voice_channel_statuses",
       "hash": 2809294122
     },
@@ -2320,8 +2383,8 @@
     "data": {
       "type": "guild",
       "title": "Enables setting up onboarding with advanced mode",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
+      "buckets": [-1, 0, 1],
       "id": "2023-02_onboarding_advanced_mode",
       "hash": 2544556038
     },
@@ -2411,10 +2474,11 @@
       "type": "guild",
       "title": "Split Permissions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Split permissions into Add/Modify + Delete"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_split_permissions",
       "hash": 2355118827
     },
@@ -2468,10 +2532,11 @@
       "type": "guild",
       "title": "Server Subscriptions Accept New Terms",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Subscriptions Accept New Terms"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_cr_accept_new_terms",
       "hash": 747043176
     },
@@ -2501,12 +2566,13 @@
       "type": "guild",
       "title": "Server Subscriptions Tier Templates",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: 299 basic tier + no link",
         "Treatment 2: 399 basic tier + no link",
         "Treatment 3: 399 basic tier + link"
       ],
-      "buckets": [0, 1, 2, 3],
+      "buckets": [-1, 0, 1, 2, 3],
       "id": "2023-03_server_subscriptions_tier_templates",
       "hash": 808859253
     },
@@ -2599,8 +2665,12 @@
     "data": {
       "type": "guild",
       "title": "Self Demonetization",
-      "description": ["Control", "Treatment 1: Enables Self Demonetization"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables Self Demonetization"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_self_demonetization",
       "hash": 3194028601
     },
@@ -2631,8 +2701,12 @@
     "data": {
       "type": "guild",
       "title": "Home Deprecation",
-      "description": ["Control", "Treatment 1: Show notice"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show notice"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_home_deprecation",
       "hash": 280214844
     },
@@ -2681,12 +2755,13 @@
       "type": "guild",
       "title": "ClydeAI",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled (Default Off)",
         "Treatment 3: Enabled (Default On)",
         "Treatment 4: Coming Soon"
       ],
-      "buckets": [0, 1, 3, 4],
+      "buckets": [-1, 0, 1, 3, 4],
       "id": "2023-03_clyde_ai",
       "hash": 4083096281
     },
@@ -2831,8 +2906,12 @@
     "data": {
       "type": "guild",
       "title": "Safety check in guild settings",
-      "description": ["Control", "Treatment 1: Show safety check in settings"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show safety check in settings"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_guild_safety_settings",
       "hash": 1640064366
     },
@@ -2868,8 +2947,8 @@
     "data": {
       "type": "guild",
       "title": "MJ Chat Bar enabled guilds",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_mj_chat_bar_guild",
       "hash": 2182959876
     },
@@ -2899,11 +2978,12 @@
       "type": "guild",
       "title": "Improved Message Markdown Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show improved message markdown",
         "Treatment 2: Show improved message markdown WITHOUT masked links"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-03_improved_message_markdown_guild",
       "hash": 1489979462
     },
@@ -3001,10 +3081,11 @@
       "type": "guild",
       "title": "Media Channel",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create a media channel"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_guild_media_channel",
       "hash": 3890564237
     },
@@ -3125,8 +3206,12 @@
     "data": {
       "type": "guild",
       "title": "Onboarding Upsell Lifecycle",
-      "description": ["Control", "Treatment 1: Show new lifecycle upsells"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show new lifecycle upsells"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_onboarding_upsell_lifecycle",
       "hash": 485475819
     },
@@ -3188,10 +3273,11 @@
       "type": "guild",
       "title": "Hide onboarding soft requirement for partnership",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show onboarding soft requirement for partnership"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-03_onboarding_soft_requirement_for_partnership",
       "hash": 3738976194
     },
@@ -3239,8 +3325,8 @@
     "data": {
       "type": "guild",
       "title": "Fast New Channels",
-      "description": ["Control", "Treatment 1: On"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
+      "buckets": [-1, 0, 1],
       "id": "2023-04_fast_new_channels",
       "hash": 4063488887
     },
@@ -3290,8 +3376,12 @@
     "data": {
       "type": "guild",
       "title": "Server Badging",
-      "description": ["Control", "Treatment 1: Enable Server Badging"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Server Badging"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-04_server_badging",
       "hash": 41612842
     },
@@ -3339,8 +3429,12 @@
     "data": {
       "type": "guild",
       "title": "Guild Alert Mode",
-      "description": ["Control", "Treatment 1: Show alert mode experimence"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show alert mode experimence"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-04_guild_alert_mode",
       "hash": 2710924848
     },
@@ -3403,10 +3497,11 @@
       "type": "guild",
       "title": "Server Products",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-04_server_products",
       "hash": 2236798974
     },
@@ -3445,8 +3540,12 @@
     "data": {
       "type": "guild",
       "title": "[ADMIN] Make server guide optional",
-      "description": ["Control", "Treatment 1: Optional"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Optional"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-05_optional_onboarding_home_admin",
       "hash": 695300504
     },
@@ -3494,8 +3593,12 @@
     "data": {
       "type": "guild",
       "title": "Guild Member Safety Experiment",
-      "description": ["Control", "Treatment 1: Guild Member Safety Experiment"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Guild Member Safety Experiment"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-05_guild_member_safety_experiment",
       "hash": 603648674
     },
@@ -3561,8 +3664,12 @@
     "data": {
       "type": "guild",
       "title": "Notifications for UGC changes",
-      "description": ["Control", "Treatment 1: Show Notifications"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show Notifications"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-05_ugc_notifications",
       "hash": 631733804
     },
@@ -3598,10 +3705,11 @@
       "type": "guild",
       "title": "Automod on User Profile A/B",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod on User Profile enabled"
       ],
-      "buckets": [0, 1],
+      "buckets": [-1, 0, 1],
       "id": "2023-05_automod_user_profile_ab",
       "hash": 4261225962
     },
@@ -3642,8 +3750,12 @@
     "data": {
       "type": "guild",
       "title": "Modify Clyde's Personality",
-      "description": ["Control", "Treatment 1: enable personality setting"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable personality setting"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2023-05_clyde_ai_guild_personality",
       "hash": 2701598838
     },
@@ -3703,8 +3815,13 @@
     "data": {
       "type": "guild",
       "title": "Inventory Guild Settings Experiment",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show setting toggle without respecting it",
+        "Treatment 2: Show setting toggle and respect it"
+      ],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-06_inventory_guild_setting",
       "hash": 3883768363
     },
@@ -3735,8 +3852,8 @@
     "data": {
       "type": "guild",
       "title": "Remove Reactions by Type",
-      "description": ["Control", "Treatment 1: Enabled"],
-      "buckets": [0, 1],
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
       "id": "2023-06_remove_reactions_by_type",
       "hash": 4195647747
     },
