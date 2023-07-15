@@ -3431,9 +3431,10 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Show alert mode experimence"
+        "Treatment 1: Show alert mode experience",
+        "Treatment 2: Show alert mode experience with member safety"
       ],
-      "buckets": [-1, 0, 1],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-04_guild_alert_mode",
       "hash": 2710924848
     },
@@ -3881,6 +3882,67 @@
             {
               "type": "guild_in_range_by_hash",
               "hash_key": 4195647747,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Channel based Clyde personalities",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable personality setting"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-06_clyde_ai_channel_based_personality",
+      "hash": 3143066071
+    },
+    "rollout": {
+      "hashKey": 3143066071,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 2000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 2000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3143066071,
               "target": 10000
             }
           ]
