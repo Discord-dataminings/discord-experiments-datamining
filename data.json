@@ -2106,23 +2106,24 @@
   {
     "data": {
       "type": "guild",
-      "title": "Application Recommendation Server Checklist Experiment",
+      "title": "Voice Channel Status Guild Experiment",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Show recommendation to add apps in new server checklist"
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+        "Treatment 2: A/A test, identical to treatment 1"
       ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-02_app_recommendations_server_checklist",
-      "hash": 3320756132
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-02_voice_channel_statuses",
+      "hash": 2809294122
     },
     "rollout": {
-      "hashKey": 3320756132,
-      "revision": 2,
+      "hashKey": 2809294122,
+      "revision": 3,
       "populations": [
         {
           "buckets": {
-            "1": {
+            "-1": {
               "rollout": [
                 {
                   "min": 0,
@@ -2131,10 +2132,51 @@
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 0,
+              "max_id": 2000
+            }
+          ]
         }
       ],
-      "overrides": {}
+      "overrides": {
+        "1": [
+          "890883112500854804",
+          "887867262839705651",
+          "993957185493160057",
+          "705666251560583168",
+          "1115745220575887491",
+          "1095810146761973830",
+          "300748021300330497",
+          "1116006991505137734",
+          "172056827335409665",
+          "982909920305381396",
+          "1116788534334980160",
+          "1064959560890204271",
+          "161678624032948225",
+          "281683040739262465"
+        ]
+      }
     }
   },
   {
@@ -2207,6 +2249,40 @@
           "364119753972776960"
         ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Application Recommendation Server Checklist Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show recommendation to add apps in new server checklist"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-02_app_recommendations_server_checklist",
+      "hash": 3320756132
+    },
+    "rollout": {
+      "hashKey": 3320756132,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
@@ -2308,82 +2384,6 @@
         }
       ],
       "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Voice Channel Status Guild Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-        "Treatment 2: A/A test, identical to treatment 1"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-02_voice_channel_statuses",
-      "hash": 2809294122
-    },
-    "rollout": {
-      "hashKey": 2809294122,
-      "revision": 3,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_id": 0,
-              "max_id": 2000
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": [
-          "890883112500854804",
-          "887867262839705651",
-          "993957185493160057",
-          "705666251560583168",
-          "1115745220575887491",
-          "1095810146761973830",
-          "300748021300330497",
-          "1116006991505137734",
-          "172056827335409665",
-          "982909920305381396",
-          "1116788534334980160",
-          "1064959560890204271",
-          "161678624032948225",
-          "281683040739262465"
-        ]
-      }
     }
   },
   {
