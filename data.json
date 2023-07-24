@@ -4046,6 +4046,59 @@
   {
     "data": {
       "type": "guild",
+      "title": "server guide guild experiment for triggering purposes",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: useless treatment"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-07_server_guide_trigger",
+      "hash": 2104400771
+    },
+    "rollout": {
+      "hashKey": 2104400771,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 5000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2104400771,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Community Endless Invites",
       "description": [
         "Control",
