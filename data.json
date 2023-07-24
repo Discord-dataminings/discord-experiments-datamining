@@ -2119,11 +2119,11 @@
     },
     "rollout": {
       "hashKey": 2809294122,
-      "revision": 3,
+      "revision": 4,
       "populations": [
         {
           "buckets": {
-            "-1": {
+            "1": {
               "rollout": [
                 {
                   "min": 0,
@@ -2141,10 +2141,42 @@
         },
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 550,
+                  "max": 650
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "min": 650,
+                  "max": 750
+                }
+              ]
+            },
             "-1": {
               "rollout": [
                 {
                   "min": 0,
+                  "max": 450
+                },
+                {
+                  "min": 750,
+                  "max": 2650
+                },
+                {
+                  "min": 2650,
+                  "max": 4550
+                },
+                {
+                  "min": 4550,
+                  "max": 6450
+                },
+                {
+                  "min": 6450,
                   "max": 10000
                 }
               ]
