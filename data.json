@@ -3643,7 +3643,7 @@
     },
     "rollout": {
       "hashKey": 603648674,
-      "revision": 5,
+      "revision": 6,
       "populations": [
         {
           "buckets": {
@@ -3668,7 +3668,12 @@
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
         },
         {
           "buckets": {
