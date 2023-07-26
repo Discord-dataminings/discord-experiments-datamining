@@ -702,6 +702,59 @@
         "Treatment 1: Enable Reporting Of Raids"
       ],
       "buckets": [-1, 0, 1],
+      "id": "2022-07_report_raids",
+      "hash": 1055563741
+    },
+    "rollout": {
+      "hashKey": 1055563741,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1055563741,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Report Raids",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Reporting Of Raids"
+      ],
+      "buckets": [-1, 0, 1],
       "id": "2022-07_invites_disabled",
       "hash": 3683063649
     },
@@ -757,59 +810,6 @@
           "991365865532575844"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Report Raids",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Reporting Of Raids"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2022-07_report_raids",
-      "hash": 1055563741
-    },
-    "rollout": {
-      "hashKey": 1055563741,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1055563741,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
     }
   },
   {
@@ -1796,6 +1796,147 @@
   {
     "data": {
       "type": "guild",
+      "title": "Stage Boosting",
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
+      "id": "2023-02_stage_boosting",
+      "hash": 1816004721
+    },
+    "rollout": {
+      "hashKey": 1816004721,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 500
+                },
+                {
+                  "min": 500,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 9500
+                },
+                {
+                  "min": 9500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1816004721,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Channel Summaries Guild Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable channel summaries",
+        "Treatment 2: Enable channel summaries GA"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-02_p13n_summarization",
+      "hash": 1504498621
+    },
+    "rollout": {
+      "hashKey": 1504498621,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED_GA"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED"]
+            }
+          ]
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "[ADMIN] Home as a community onboarding surface",
       "description": [
         "Not Eligible",
@@ -1960,147 +2101,6 @@
           "401220874742661121"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Stage Boosting",
-      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
-      "buckets": [-1, 0, 1],
-      "id": "2023-02_stage_boosting",
-      "hash": 1816004721
-    },
-    "rollout": {
-      "hashKey": 1816004721,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 500
-                },
-                {
-                  "min": 500,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 9500
-                },
-                {
-                  "min": 9500,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1816004721,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Channel Summaries Guild Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable channel summaries",
-        "Treatment 2: Enable channel summaries GA"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-02_p13n_summarization",
-      "hash": 1504498621
-    },
-    "rollout": {
-      "hashKey": 1504498621,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED_GA"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED"]
-            }
-          ]
-        }
-      ],
-      "overrides": {}
     }
   },
   {
