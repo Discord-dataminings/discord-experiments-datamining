@@ -3398,12 +3398,37 @@
               "rollout": [
                 {
                   "min": 0,
+                  "max": 100
+                },
+                {
+                  "min": 100,
+                  "max": 2500
+                },
+                {
+                  "min": 2500,
+                  "max": 2600
+                },
+                {
+                  "min": 2600,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 7500
+                },
+                {
+                  "min": 7500,
                   "max": 10000
                 }
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
         }
       ],
       "overrides": {
