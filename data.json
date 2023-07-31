@@ -3935,8 +3935,26 @@
     },
     "rollout": {
       "hashKey": 3883768363,
-      "revision": 3,
+      "revision": 4,
       "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["DISCOVERABLE"]
+            }
+          ]
+        },
         {
           "buckets": {
             "2": {
@@ -3981,17 +3999,43 @@
               "max_id": null
             }
           ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 1500
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 1500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 300,
+              "max_id": null
+            }
+          ]
         }
       ],
       "overrides": {
         "1": [
           "937605284065607711",
           "954471955782844446",
-          "1009606240546066473",
           "1033868531118374975",
           "1094865563152551996"
         ],
-        "2": ["1128777448062988471"]
+        "2": ["1128777448062988471", "1009606240546066473"]
       }
     }
   },
