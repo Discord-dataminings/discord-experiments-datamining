@@ -2935,47 +2935,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Safety check in guild settings",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show safety check in settings"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_guild_safety_settings",
-      "hash": 1640064366
-    },
-    "rollout": {
-      "hashKey": 1640064366,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": ["1080899969243943072", "763838479293349899"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "MJ Chat Bar enabled guilds",
       "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
       "buckets": [-1, 0, 1],
@@ -4231,6 +4190,73 @@
   {
     "data": {
       "type": "guild",
+      "title": "Guild channel summarization model swapping",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Override guild summaries to use SOURCE_1"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-07_p13n_summarization_model_swap_guild",
+      "hash": 2803184680
+    },
+    "rollout": {
+      "hashKey": 2803184680,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 6000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 6000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED_GA"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED"]
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": ["1064959560890204271"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Allow replies to welcome messages",
       "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
       "buckets": [-1, 0, 1],
@@ -4260,6 +4286,41 @@
             }
           ]
         },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Alert Mode (friend servers only)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show alert mode experience",
+        "Treatment 2: Show alert mode experience with member safety"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-08_guild_alert_mode_friend_server",
+      "hash": 2225390567
+    },
+    "rollout": {
+      "hashKey": 2225390567,
+      "revision": 0,
+      "populations": [
         {
           "buckets": {
             "-1": {
