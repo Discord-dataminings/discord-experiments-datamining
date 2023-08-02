@@ -2935,36 +2935,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "MJ Chat Bar enabled guilds",
-      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_mj_chat_bar_guild",
-      "hash": 2182959876
-    },
-    "rollout": {
-      "hashKey": 2182959876,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Improved Message Markdown Guild Experiment",
       "description": [
         "Not Eligible",
@@ -3259,6 +3229,36 @@
             }
           ]
         },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "MJ Chat Bar enabled guilds",
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
+      "buckets": [-1, 0, 1],
+      "id": "2023-03_mj_chat_bar_guild",
+      "hash": 2182959876
+    },
+    "rollout": {
+      "hashKey": 2182959876,
+      "revision": 0,
+      "populations": [
         {
           "buckets": {
             "-1": {
