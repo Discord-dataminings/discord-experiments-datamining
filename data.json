@@ -2510,40 +2510,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Server Subscriptions Accept New Terms",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Server Subscriptions Accept New Terms"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_cr_accept_new_terms",
-      "hash": 747043176
-    },
-    "rollout": {
-      "hashKey": 747043176,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Server Subscriptions Tier Templates",
       "description": [
         "Not Eligible",
