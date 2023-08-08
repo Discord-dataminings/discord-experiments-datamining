@@ -3509,40 +3509,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Notifications for UGC changes",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show Notifications"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-05_ugc_notifications",
-      "hash": 631733804
-    },
-    "rollout": {
-      "hashKey": 631733804,
-      "revision": 1,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Automod on User Profile A/B",
       "description": [
         "Not Eligible",
