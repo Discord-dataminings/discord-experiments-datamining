@@ -417,40 +417,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Role Subscription Analytics",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables guild to view analytics for role subscriptions"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2022-03_role_subscription_analytics_portal",
-      "hash": 3510816342
-    },
-    "rollout": {
-      "hashKey": 3510816342,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Guild Role Subscription Purchase Feedback Loop",
       "description": [
         "Not Eligible",
