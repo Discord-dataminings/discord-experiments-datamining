@@ -2473,42 +2473,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Self Demonetization",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Self Demonetization"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_self_demonetization",
-      "hash": 3194028601
-    },
-    "rollout": {
-      "hashKey": 3194028601,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": ["1042521715630166056"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Home Deprecation",
       "description": [
         "Not Eligible",
