@@ -376,42 +376,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Role Subscription Purchase Feedback Loop",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
-      "hash": 1990672009
-    },
-    "rollout": {
-      "hashKey": 1990672009,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": ["908114392263049277"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Guild Role Subscription Mobile Web",
       "description": [
         "Not Eligible",
