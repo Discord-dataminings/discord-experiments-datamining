@@ -4388,36 +4388,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Remixing Guild Experiment",
-      "description": ["Control", "Treatment 1: Enable media remeixing"],
-      "buckets": [0, 1],
-      "id": "2023-04_mobile_remix_v2",
-      "hash": 3903965280
-    },
-    "rollout": {
-      "hashKey": 3903965280,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
