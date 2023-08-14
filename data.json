@@ -376,40 +376,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Role Subscription Mobile Web",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables role subscription mobile web purchase page"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2022-05_mobile_web_role_subscription_purchase_page",
-      "hash": 4190408036
-    },
-    "rollout": {
-      "hashKey": 4190408036,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Show the button to join the admin server in community overview server settings page",
       "description": [
         "Not Eligible",
