@@ -409,7 +409,7 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_id": 200,
+              "min_id": 1000,
               "max_id": null
             }
           ]
