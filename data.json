@@ -712,106 +712,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Holdout",
-        "Treatment 1: NMX Core",
-        "Treatment 2: NMX Core + Home",
-        "Treatment 3: NMX Core + Highlights",
-        "Treatment 4: Home"
-      ],
-      "buckets": [-1, 0, 1, 2, 3, 4],
-      "id": "2022-10_communities_multi",
-      "hash": 2457903107
-    },
-    "rollout": {
-      "hashKey": 2457903107,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 4000,
-                  "max": 6000
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "min": 6000,
-                  "max": 8000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 2000
-                },
-                {
-                  "min": 8000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY_EXP_LARGE_UNGATED"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 4000,
-                  "max": 6000
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "min": 6000,
-                  "max": 8000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 2000
-                },
-                {
-                  "min": 8000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY_EXP_LARGE_GATED"]
-            }
-          ]
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Raid Alerts",
       "description": [
         "Not Eligible",
@@ -4125,7 +4025,7 @@
           "filters": [
             {
               "type": "guild_has_feature",
-              "guild_features": ["GUILD_ONBOARDING"]
+              "guild_features": ["GUILD_ONBOARDING_HAS_PROMPTS"]
             }
           ]
         },
