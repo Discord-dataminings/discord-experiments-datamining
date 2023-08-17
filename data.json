@@ -302,44 +302,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Home Tab Guild",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Check User as well",
-        "Treatment 2: Force on"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2022-01_home_tab_guild",
-      "hash": 3832113202
-    },
-    "rollout": {
-      "hashKey": 3832113202,
-      "revision": 4,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "0": ["814669604840013874"],
-        "2": ["662267976984297473"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Guild Audit Log - Guild Feature Flag",
       "description": [
         "Not Eligible",
