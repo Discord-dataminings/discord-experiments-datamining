@@ -2414,109 +2414,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Improved Message Markdown Guild Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show improved message markdown",
-        "Treatment 2: Show improved message markdown WITHOUT masked links"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-03_improved_message_markdown_guild",
-      "hash": 1489979462
-    },
-    "rollout": {
-      "hashKey": 1489979462,
-      "revision": 1,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 1000
-                },
-                {
-                  "min": 1000,
-                  "max": 2000
-                },
-                {
-                  "min": 2000,
-                  "max": 3500
-                },
-                {
-                  "min": 3500,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 6000
-                },
-                {
-                  "min": 6000,
-                  "max": 7500
-                },
-                {
-                  "min": 7500,
-                  "max": 8000
-                },
-                {
-                  "min": 8000,
-                  "max": 9000
-                },
-                {
-                  "min": 9000,
-                  "max": 9500
-                },
-                {
-                  "min": 9500,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1489979462,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Media Channel",
       "description": [
         "Not Eligible",
@@ -2658,6 +2555,109 @@
           "1129250560328093826"
         ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Improved Message Markdown Guild Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show improved message markdown",
+        "Treatment 2: Show improved message markdown WITHOUT masked links"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-03_improved_message_markdown_guild",
+      "hash": 1489979462
+    },
+    "rollout": {
+      "hashKey": 1489979462,
+      "revision": 1,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 1000
+                },
+                {
+                  "min": 1000,
+                  "max": 2000
+                },
+                {
+                  "min": 2000,
+                  "max": 3500
+                },
+                {
+                  "min": 3500,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 6000
+                },
+                {
+                  "min": 6000,
+                  "max": 7500
+                },
+                {
+                  "min": 7500,
+                  "max": 8000
+                },
+                {
+                  "min": 8000,
+                  "max": 9000
+                },
+                {
+                  "min": 9000,
+                  "max": 9500
+                },
+                {
+                  "min": 9500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1489979462,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
@@ -2890,54 +2890,6 @@
           "981721840697360444"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Fast New Channels",
-      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
-      "buckets": [-1, 0, 1],
-      "id": "2023-04_fast_new_channels",
-      "hash": 4063488887
-    },
-    "rollout": {
-      "hashKey": 4063488887,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY_CANARY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
     }
   },
   {
