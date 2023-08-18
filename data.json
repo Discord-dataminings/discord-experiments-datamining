@@ -3835,6 +3835,38 @@
   {
     "data": {
       "type": "guild",
+      "title": "Clips (Public Test)",
+      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Clips"],
+      "buckets": [-1, 0, 1],
+      "id": "2023-08_clips_public_test",
+      "hash": 3779532009
+    },
+    "rollout": {
+      "hashKey": 3779532009,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["1095810146761973830", "1073744274774048868"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Guild Settings Improved Bans Page",
       "description": [
         "Not Eligible",
