@@ -3827,34 +3827,14 @@
     },
     "rollout": {
       "hashKey": 3768642622,
-      "revision": 1,
+      "revision": 2,
       "populations": [
         {
           "buckets": {
             "1": {
               "rollout": [
                 {
-                  "min": 100,
-                  "max": 200
-                },
-                {
-                  "min": 600,
-                  "max": 1000
-                },
-                {
-                  "min": 2000,
-                  "max": 3000
-                },
-                {
-                  "min": 5000,
-                  "max": 7000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 7000,
+                  "min": 0,
                   "max": 10000
                 }
               ]
