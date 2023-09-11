@@ -1250,52 +1250,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Forum non-community",
-      "description": ["Not Eligible", "Control Bucket", "Treatment 1: On"],
-      "buckets": [-1, 0, 1],
-      "id": "2023-01_forums_non_community",
-      "hash": 1446479414
-    },
-    "rollout": {
-      "hashKey": 1446479414,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 2500,
-                  "max": 5000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 5000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "1046918739599315124",
-          "971683003606654976",
-          "1070109297268248639",
-          "961074291183595530"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Shared Canvas",
       "description": [
         "Not Eligible",
