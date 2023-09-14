@@ -3429,6 +3429,40 @@
   {
     "data": {
       "type": "guild",
+      "title": "Members Search V2 Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Members Search V2"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-07_guild_members_search_in_elasticsearch",
+      "hash": 386483746
+    },
+    "rollout": {
+      "hashKey": 386483746,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Proactive Clyde",
       "description": [
         "Not Eligible",
