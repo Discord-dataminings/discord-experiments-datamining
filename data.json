@@ -3857,6 +3857,47 @@
   {
     "data": {
       "type": "guild",
+      "title": "Members Safety Release Coachmark Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Members Safety Release Coachmark"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-09_member_safety_release_coachmark",
+      "hash": 1865413295
+    },
+    "rollout": {
+      "hashKey": 1865413295,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": ["763838479293349899"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Community Endless Invites",
       "description": [
         "Control",
