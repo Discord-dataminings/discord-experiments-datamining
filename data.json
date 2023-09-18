@@ -3791,6 +3791,40 @@
   {
     "data": {
       "type": "guild",
+      "title": "Simple deadchat prompt",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: trigger deadchat upon connection open"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-08_deadchat_simple_prompt_guild",
+      "hash": 2716650836
+    },
+    "rollout": {
+      "hashKey": 2716650836,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Members Safety Release Coachmark Experiment",
       "description": [
         "Not Eligible",
