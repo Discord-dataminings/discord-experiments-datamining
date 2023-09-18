@@ -1732,40 +1732,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Application Recommendation Server Checklist Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show recommendation to add apps in new server checklist"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-02_app_recommendations_server_checklist",
-      "hash": 3320756132
-    },
-    "rollout": {
-      "hashKey": 3320756132,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Automod Custom Message",
       "description": [
         "Not Eligible",
@@ -2630,36 +2596,6 @@
             }
           ]
         },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "MJ Chat Bar enabled guilds",
-      "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_mj_chat_bar_guild",
-      "hash": 2182959876
-    },
-    "rollout": {
-      "hashKey": 2182959876,
-      "revision": 0,
-      "populations": [
         {
           "buckets": {
             "-1": {
