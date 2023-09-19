@@ -3031,53 +3031,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Onboarding Wumpus Tooltip",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Removes Wumpus tooltips"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-05_onboarding_wumpus_tooltip_obliteration",
-      "hash": 3295981377
-    },
-    "rollout": {
-      "hashKey": 3295981377,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Inventory Guild Settings Experiment",
       "description": [
         "Not Eligible",
