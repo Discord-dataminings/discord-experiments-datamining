@@ -3830,6 +3830,52 @@
   {
     "data": {
       "type": "guild",
+      "title": "Experiments with showing Events entrypoint in the channel list in friends guilds",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: User can see top level events entrypoint in friend guilds"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-09_guild_events_entrypoint",
+      "hash": 1943118067
+    },
+    "rollout": {
+      "hashKey": 1943118067,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 100,
+                  "max": 200
+                },
+                {
+                  "min": 1600,
+                  "max": 3000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 3000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Community Endless Invites",
       "description": [
         "Control",
