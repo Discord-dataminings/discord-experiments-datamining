@@ -3571,8 +3571,48 @@
     },
     "rollout": {
       "hashKey": 2225390567,
-      "revision": 0,
+      "revision": 1,
       "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 2500,
+                  "max": 5000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 5000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2225390567,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
         {
           "buckets": {
             "-1": {
