@@ -2303,72 +2303,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Onboarding Upsell Lifecycle",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show new lifecycle upsells"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-03_onboarding_upsell_lifecycle",
-      "hash": 485475819
-    },
-    "rollout": {
-      "hashKey": 485475819,
-      "revision": 4,
-      "populations": [
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_id": 5000,
-              "max_id": null
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Improved Message Markdown Guild Experiment",
       "description": [
         "Not Eligible",
@@ -2613,6 +2547,72 @@
           "1129250560328093826"
         ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Onboarding Upsell Lifecycle",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show new lifecycle upsells"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-03_onboarding_upsell_lifecycle",
+      "hash": 485475819
+    },
+    "rollout": {
+      "hashKey": 485475819,
+      "revision": 4,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 5000,
+              "max_id": null
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
     }
   },
   {
