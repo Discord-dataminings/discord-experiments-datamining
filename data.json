@@ -3388,7 +3388,7 @@
       "populations": [
         {
           "buckets": {
-            "-1": {
+            "2": {
               "rollout": [
                 {
                   "min": 0,
@@ -3406,7 +3406,7 @@
         },
         {
           "buckets": {
-            "-1": {
+            "1": {
               "rollout": [
                 {
                   "min": 0,
