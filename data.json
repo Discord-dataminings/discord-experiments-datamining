@@ -2656,115 +2656,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Alert Mode",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show alert mode experience",
-        "Treatment 2: Show alert mode experience with member safety"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-04_guild_alert_mode",
-      "hash": 2710924848
-    },
-    "rollout": {
-      "hashKey": 2710924848,
-      "revision": 4,
-      "populations": [
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": [
-          "840296607785287763",
-          "435572461912719360",
-          "779781184665944104",
-          "226576492782551042",
-          "679875946597056683",
-          "303681520202285057",
-          "595922668876857364",
-          "424012709219008522",
-          "942646368453935204",
-          "880928798718173224",
-          "874345844743213126",
-          "981721840697360444",
-          "1021478553033920544"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Server Badging",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Server Badging"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-04_server_badging",
-      "hash": 41612842
-    },
-    "rollout": {
-      "hashKey": 41612842,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "876918412369088582",
-          "1105576287197724786",
-          "1105576346555523218",
-          "1105576413635039282",
-          "1105576433633472532",
-          "1105576549056528457",
-          "1105576609928445964",
-          "1105576653742166106",
-          "1039940765750665226",
-          "1105952274511057058",
-          "1105952651960668323",
-          "1105953713673228358",
-          "1105953777212739716",
-          "816784679717044276",
-          "1114255235704180746"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Server Products",
       "description": [
         "Not Eligible",
@@ -2873,6 +2764,115 @@
           "1102986978892460148",
           "1074968324468899851",
           "53690199142563851"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Alert Mode",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show alert mode experience",
+        "Treatment 2: Show alert mode experience with member safety"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-04_guild_alert_mode",
+      "hash": 2710924848
+    },
+    "rollout": {
+      "hashKey": 2710924848,
+      "revision": 4,
+      "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": [
+          "840296607785287763",
+          "435572461912719360",
+          "779781184665944104",
+          "226576492782551042",
+          "679875946597056683",
+          "303681520202285057",
+          "595922668876857364",
+          "424012709219008522",
+          "942646368453935204",
+          "880928798718173224",
+          "874345844743213126",
+          "981721840697360444",
+          "1021478553033920544"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Server Badging",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Server Badging"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-04_server_badging",
+      "hash": 41612842
+    },
+    "rollout": {
+      "hashKey": 41612842,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "651595875897835540",
+          "876918412369088582",
+          "1105576287197724786",
+          "1105576346555523218",
+          "1105576413635039282",
+          "1105576433633472532",
+          "1105576549056528457",
+          "1105576609928445964",
+          "1105576653742166106",
+          "1039940765750665226",
+          "1105952274511057058",
+          "1105952651960668323",
+          "1105953713673228358",
+          "1105953777212739716",
+          "816784679717044276",
+          "1114255235704180746"
         ]
       }
     }
@@ -3266,9 +3266,10 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Members Search V2"
+        "Treatment 1: Enable Members Search V2 Backend Only",
+        "Treatment 2: Enable Members Search V2 Backend + Frontend"
       ],
-      "buckets": [-1, 0, 1],
+      "buckets": [-1, 0, 1, 2],
       "id": "2023-07_guild_members_search_in_elasticsearch",
       "hash": 386483746
     },
