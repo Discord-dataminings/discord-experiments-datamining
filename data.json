@@ -2665,6 +2665,32 @@
         },
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 1000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 1000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "-1": {
               "rollout": [
                 {
