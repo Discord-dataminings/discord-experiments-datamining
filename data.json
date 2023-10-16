@@ -3822,6 +3822,60 @@
   {
     "data": {
       "type": "guild",
+      "title": "Shows additional notices in the channel list for upcoming events",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Guild members can see upcoming events notices"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-09_upcoming_guild_events_notice",
+      "hash": 2766349394
+    },
+    "rollout": {
+      "hashKey": 2766349394,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["651595875897835540"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Community Endless Invites",
       "description": [
         "Control",
