@@ -3179,8 +3179,67 @@
     },
     "rollout": {
       "hashKey": 386483746,
-      "revision": 0,
+      "revision": 1,
       "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 2000,
+                  "max": 4000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 4000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            },
+            {
+              "type": "guild_member_count_range",
+              "min_id": 200,
+              "max_id": null
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 386483746,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            },
+            {
+              "type": "guild_member_count_range",
+              "min_id": 200,
+              "max_id": null
+            }
+          ]
+        },
         {
           "buckets": {
             "-1": {
