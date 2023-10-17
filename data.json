@@ -1348,64 +1348,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Channel Summaries Guild Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable channel summaries",
-        "Treatment 2: Enable channel summaries GA"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-02_p13n_summarization",
-      "hash": 1504498621
-    },
-    "rollout": {
-      "hashKey": 1504498621,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED_GA"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED"]
-            }
-          ]
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "[ADMIN] Home as a community onboarding surface",
       "description": [
         "Not Eligible",
@@ -1570,6 +1512,64 @@
           "401220874742661121"
         ]
       }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Channel Summaries Guild Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable channel summaries",
+        "Treatment 2: Enable channel summaries GA"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-02_p13n_summarization",
+      "hash": 1504498621
+    },
+    "rollout": {
+      "hashKey": 1504498621,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED_GA"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["SUMMARIES_ENABLED"]
+            }
+          ]
+        }
+      ],
+      "overrides": {}
     }
   },
   {
