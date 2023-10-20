@@ -1549,24 +1549,6 @@
               "guild_features": ["SUMMARIES_ENABLED_GA"]
             }
           ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED"]
-            }
-          ]
         }
       ],
       "overrides": {}
@@ -3285,24 +3267,6 @@
             {
               "type": "guild_has_feature",
               "guild_features": ["SUMMARIES_ENABLED_GA"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["SUMMARIES_ENABLED"]
             }
           ]
         }
