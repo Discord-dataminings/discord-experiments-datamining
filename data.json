@@ -3069,67 +3069,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Proactive Clyde",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enable proactive clyde"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-07_clyde_ai_proactive_guilds",
-      "hash": 3041932109
-    },
-    "rollout": {
-      "hashKey": 3041932109,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 2000
-                },
-                {
-                  "min": 2000,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 3041932109,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Members Safety Non Community Experiment",
       "description": [
         "Not Eligible",
