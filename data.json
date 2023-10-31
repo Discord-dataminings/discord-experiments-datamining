@@ -2623,6 +2623,59 @@
   {
     "data": {
       "type": "guild",
+      "title": "Server Badging",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Server Badging"
+      ],
+      "buckets": [-1, 0, 1],
+      "id": "2023-04_server_badging",
+      "hash": 41612842
+    },
+    "rollout": {
+      "hashKey": 41612842,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "651595875897835540",
+          "876918412369088582",
+          "1105576287197724786",
+          "1105576346555523218",
+          "1105576413635039282",
+          "1105576433633472532",
+          "1105576549056528457",
+          "1105576609928445964",
+          "1105576653742166106",
+          "1039940765750665226",
+          "1105952274511057058",
+          "1105952651960668323",
+          "1105953713673228358",
+          "1105953777212739716",
+          "816784679717044276",
+          "1114255235704180746"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Guild Alert Mode",
       "description": [
         "Not Eligible",
@@ -2679,59 +2732,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Server Badging",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Server Badging"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-04_server_badging",
-      "hash": 41612842
-    },
-    "rollout": {
-      "hashKey": 41612842,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "876918412369088582",
-          "1105576287197724786",
-          "1105576346555523218",
-          "1105576413635039282",
-          "1105576433633472532",
-          "1105576549056528457",
-          "1105576609928445964",
-          "1105576653742166106",
-          "1039940765750665226",
-          "1105952274511057058",
-          "1105952651960668323",
-          "1105953713673228358",
-          "1105953777212739716",
-          "816784679717044276",
-          "1114255235704180746"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "[ADMIN] Make server guide optional",
       "description": [
         "Not Eligible",
@@ -2777,45 +2777,6 @@
             }
           },
           "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Guild Member Safety Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Guild Member Safety Experiment"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-05_guild_member_safety_experiment",
-      "hash": 603648674
-    },
-    "rollout": {
-      "hashKey": 603648674,
-      "revision": 7,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
         }
       ],
       "overrides": {}
@@ -3069,48 +3030,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Members Safety Non Community Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Members Safety Page for Non Community Guilds"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-07_member_safety_non_community",
-      "hash": 581929451
-    },
-    "rollout": {
-      "hashKey": 581929451,
-      "revision": 1,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "763838479293349899",
-          "1148717179055919114",
-          "991365865532575844",
-          "921490685830525009",
-          "1150906756197785741"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Members Search V2 Experiment",
       "description": [
         "Not Eligible",
@@ -3301,81 +3220,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Guild Alert Mode (friend servers only)",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show alert mode experience",
-        "Treatment 2: Show alert mode experience with member safety"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2023-08_guild_alert_mode_friend_server",
-      "hash": 2225390567
-    },
-    "rollout": {
-      "hashKey": 2225390567,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 2500
-                },
-                {
-                  "min": 2500,
-                  "max": 5000
-                },
-                {
-                  "min": 5000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 2225390567,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        },
-        {
-          "buckets": {
-            "-1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Bulk Banning Guild Members Experiment",
       "description": [
         "Not Eligible",
@@ -3480,6 +3324,81 @@
       "hashKey": 3482606388,
       "revision": 0,
       "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Alert Mode (friend servers only)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show alert mode experience",
+        "Treatment 2: Show alert mode experience with member safety"
+      ],
+      "buckets": [-1, 0, 1, 2],
+      "id": "2023-08_guild_alert_mode_friend_server",
+      "hash": 2225390567
+    },
+    "rollout": {
+      "hashKey": 2225390567,
+      "revision": 2,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 2500
+                },
+                {
+                  "min": 2500,
+                  "max": 5000
+                },
+                {
+                  "min": 5000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2225390567,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
         {
           "buckets": {
             "-1": {
