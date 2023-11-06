@@ -4014,6 +4014,38 @@
   {
     "data": {
       "type": "guild",
+      "title": "Allows guild to create recurring events",
+      "description": ["Control", "Treatment 1: Recurring Events are enabled"],
+      "buckets": [0, 1],
+      "id": "2023-09_recurring_events",
+      "hash": 2114978023
+    },
+    "rollout": {
+      "hashKey": 2114978023,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["689949103198961671", "887867262839705651", "1124465380350509086"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Trigger Debugging Guild AA Experiment",
       "description": ["Control", "Treatment 1: On"],
       "buckets": [0, 1],
