@@ -4078,6 +4078,42 @@
   {
     "data": {
       "type": "guild",
+      "title": "Allow user app commands",
+      "description": ["Control", "Treatment 1: Allow user app commands"],
+      "buckets": [0, 1],
+      "id": "2023-09_user_apps_guild",
+      "hash": 2254848082
+    },
+    "rollout": {
+      "hashKey": 2254848082,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "1042148168726487101",
+          "954473884273496124",
+          "1042521715630166056"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
