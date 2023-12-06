@@ -4194,6 +4194,24 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "-1": {
               "rollout": [
                 {
@@ -4229,6 +4247,24 @@
       "hashKey": 2254848082,
       "revision": 0,
       "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
+            }
+          ]
+        },
         {
           "buckets": {
             "-1": {
