@@ -3959,37 +3959,67 @@
       ],
       "buckets": [0, 1, 3, 4, 5],
       "id": "2023-11_clyde_ai_aa",
-      "hash": 3928972551
+      "hash": 1485389700
     },
     "rollout": {
-      "hashKey": 3928972551,
-      "revision": 0,
+      "hashKey": 1485389700,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 1000,
-                  "max": 2000
-                }
-              ]
-            },
             "-1": {
               "rollout": [
                 {
-                  "min": 2000,
+                  "min": 0,
                   "max": 10000
                 }
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 2500,
+                  "max": 5000
+                }
+              ]
+            },
+            "3": {
+              "rollout": [
+                {
+                  "min": 5000,
+                  "max": 7500
+                }
+              ]
+            },
+            "5": {
+              "rollout": [
+                {
+                  "min": 7500,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 0,
+              "max_id": 200
+            }
+          ]
         }
       ],
-      "overrides": {
-        "1": ["651595875897835540"]
-      }
+      "overrides": {}
     }
   },
   {
@@ -4058,10 +4088,10 @@
       "description": ["Control", "Treatment 1: Allow user app commands"],
       "buckets": [0, 1],
       "id": "2023-09_user_apps_guild",
-      "hash": 2254848082
+      "hash": 1570379293
     },
     "rollout": {
-      "hashKey": 2254848082,
+      "hashKey": 1570379293,
       "revision": 0,
       "populations": [
         {
@@ -4084,6 +4114,47 @@
         },
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 0,
+              "max_id": 200
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "1": ["872892246494691338", "847184799365857331", "1174133402203607131"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Allowing testing secure frames for voice/video (Guilds)",
+      "description": [
+        "Control",
+        "Treatment 1: Can support secure frames for voice/video"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-11_secure_frames_encryption_guilds",
+      "hash": 2916044329
+    },
+    "rollout": {
+      "hashKey": 2916044329,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
             "-1": {
               "rollout": [
                 {
@@ -4098,11 +4169,181 @@
       ],
       "overrides": {
         "1": [
-          "1042148168726487101",
-          "954473884273496124",
-          "1042521715630166056",
-          "802284684377325568",
-          "1013234496092524636"
+          "674359793908973569",
+          "822219052402606132",
+          "281683040739262465",
+          "997637077099364383"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Members Table Safety Signals",
+      "description": ["Control", "Treatment 1: Safety Signals Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-12_guild_members_table_safety_signal_filters",
+      "hash": 1004673763
+    },
+    "rollout": {
+      "hashKey": 1004673763,
+      "revision": 1,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 8000,
+                  "max": 10000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 6000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["435572461912719360"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "General Voice Channel Notifications for Guild",
+      "description": [
+        "Control",
+        "Treatment 1: Deadchat notifs enabled, voice channel activity notifs disabled",
+        "Treatment 2: Deadchat notifs disabled, voice channel activity notifs enabled",
+        "Treatment 3: Deadchat notifs enabled, voice channel activity notifs enabled"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2023-11_voice_activity_notification_guild",
+      "hash": 3997016690
+    },
+    "rollout": {
+      "hashKey": 3997016690,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "2": [
+          "1136423398608744588",
+          "705666251560583168",
+          "993957185493160057",
+          "1166858631170494604",
+          "858926570113728543",
+          "1157495187275255848",
+          "886315327229677628",
+          "780875876325261352",
+          "1112849445814554727",
+          "1150848592945352766",
+          "606514965565931531",
+          "176502497534410761",
+          "363154169294618625",
+          "663155546471268378",
+          "108806998211969024",
+          "313840371274874880",
+          "750184906981638214",
+          "499817104422207519"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Activities in Text Guild",
+      "description": [
+        "Control",
+        "Treatment 1: enable Activities in text channels"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-11_activities_in_text_guild",
+      "hash": 1689901851
+    },
+    "rollout": {
+      "hashKey": 1689901851,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Hang Statuses",
+      "description": ["Control", "Treatment 1: enable hang statuses"],
+      "buckets": [0, 1],
+      "id": "2023-11_enable_hang_status",
+      "hash": 1033614739
+    },
+    "rollout": {
+      "hashKey": 1033614739,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "1151305620369199144",
+          "1136423398608744588",
+          "840296607785287763",
+          "1035675318821867570",
+          "858926570113728543",
+          "1157495187275255848",
+          "886315327229677628",
+          "780875876325261352",
+          "1112849445814554727"
         ]
       }
     }
