@@ -4379,6 +4379,109 @@
   {
     "data": {
       "type": "guild",
+      "title": "Voice live activity (guild)",
+      "description": [
+        "Control",
+        "Treatment 1: Off (notif only)",
+        "Treatment 2: On (widget + notif)",
+        "Treatment 3: On (widget + notifs++)"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2023-12_voice_lockscreen_widget",
+      "hash": 3182686365
+    },
+    "rollout": {
+      "hashKey": 3182686365,
+      "revision": 4,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 3900,
+                  "max": 4000
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "min": 5900,
+                  "max": 6000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 1900
+                },
+                {
+                  "min": 2000,
+                  "max": 3900
+                },
+                {
+                  "min": 4000,
+                  "max": 5900
+                },
+                {
+                  "min": 6000,
+                  "max": 8000
+                },
+                {
+                  "min": 8000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 3,
+              "max_id": 30
+            }
+          ]
+        }
+      ],
+      "overrides": {
+        "2": [
+          "37711544032690177",
+          "48250781844901888",
+          "680537436412969111",
+          "881066542639484958",
+          "1151305620369199144",
+          "1136423398608744588",
+          "1176291441597743186",
+          "1162447812324237313",
+          "1184629771800432793"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
