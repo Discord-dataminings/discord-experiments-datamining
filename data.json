@@ -2623,9 +2623,10 @@
         "Control Bucket",
         "Treatment 1: Show settings toggle, but collection is not allowed.",
         "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
-        "Treatment 3: Show settings toggle, and collection is allowed in late August."
+        "Treatment 3: Show settings toggle, and collection is allowed in late August.",
+        "Treatment 4: Show settings toggle, allow collection for guild setting, and show rollback admin coachmark"
       ],
-      "buckets": [-1, 0, 1, 2, 3],
+      "buckets": [-1, 0, 1, 2, 3, 4],
       "id": "2023-06_inventory_guild_setting",
       "hash": 3883768363
     },
