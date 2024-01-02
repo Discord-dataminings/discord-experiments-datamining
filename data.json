@@ -1077,65 +1077,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Automod Mention Raid Notice",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Automod Mention Raid Notice"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-01_mention_raid_notice",
-      "hash": 805661295
-    },
-    "rollout": {
-      "hashKey": 805661295,
-      "revision": 1,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["PARTNERED"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": ["816784679717044276", "876918412369088582", "1039940765750665226"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Shared Canvas",
       "description": [
         "Not Eligible",
@@ -2566,52 +2507,6 @@
         }
       ],
       "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
-      "title": "Automod on User Profile A/B",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Automod on User Profile enabled"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-05_automod_user_profile_ab",
-      "hash": 4261225962
-    },
-    "rollout": {
-      "hashKey": 4261225962,
-      "revision": 2,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "1075135858732175371",
-          "667617745034280962",
-          "981721840697360444"
-        ]
-      }
     }
   },
   {
