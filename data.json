@@ -4385,6 +4385,38 @@
   {
     "data": {
       "type": "guild",
+      "title": "Guild Members Table Additional Filtering",
+      "description": ["Control", "Treatment 1: Additional filtering enabled"],
+      "buckets": [0, 1],
+      "id": "2024-01_guild_members_table_additional_filtering",
+      "hash": 1640304679
+    },
+    "rollout": {
+      "hashKey": 1640304679,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["435572461912719360"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
