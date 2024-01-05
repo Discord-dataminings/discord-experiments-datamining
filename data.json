@@ -338,53 +338,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Show the button to join the admin server in community overview server settings page",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show button if requirements met",
-        "Treatment 2: Bypass requirements"
-      ],
-      "buckets": [-1, 0, 1, 2],
-      "id": "2022-06_community_admin_server",
-      "hash": 3282315774
-    },
-    "rollout": {
-      "hashKey": 3282315774,
-      "revision": 0,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            },
-            {
-              "type": "guild_member_count_range",
-              "min_id": 1000,
-              "max_id": null
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "2": ["132251458665054209"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Free Sticker Slots Design Updates",
       "description": ["Not Eligible", "Control Bucket", "Treatment 1: Enabled"],
       "buckets": [-1, 0, 1],
