@@ -4380,6 +4380,42 @@
   {
     "data": {
       "type": "guild",
+      "title": "Windows key frame interval",
+      "description": [
+        "Control",
+        "Treatment 1: KFI 60000 ms",
+        "Treatment 2: KFI 70000 ms",
+        "Treatment 3: KFI 80000 ms",
+        "Treatment 4: KFI 90000 ms"
+      ],
+      "buckets": [0, 1, 2, 3, 4],
+      "id": "2024-01_windows_key_frame_interval",
+      "hash": 2961250399
+    },
+    "rollout": {
+      "hashKey": 2961250399,
+      "revision": 1,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
