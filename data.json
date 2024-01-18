@@ -4263,71 +4263,7 @@
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 2000,
-                  "max": 3800
-                },
-                {
-                  "min": 3800,
-                  "max": 3900
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "min": 4000,
-                  "max": 5800
-                },
-                {
-                  "min": 5800,
-                  "max": 5900
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 1900,
-                  "max": 2000
-                },
-                {
-                  "min": 3900,
-                  "max": 4000
-                },
-                {
-                  "min": 5900,
-                  "max": 6000
-                },
-                {
-                  "min": 6000,
-                  "max": 8000
-                },
-                {
-                  "min": 8000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_id": 3,
-              "max_id": 30
-            }
-          ]
+          "filters": []
         }
       ],
       "overrides": {
