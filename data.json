@@ -3178,10 +3178,18 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 1000,
+                  "max": 2000
+                }
+              ]
+            },
             "-1": {
               "rollout": [
                 {
-                  "min": 0,
+                  "min": 2000,
                   "max": 10000
                 }
               ]
