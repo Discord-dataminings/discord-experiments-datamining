@@ -12,7 +12,7 @@
   "dependencies": {
     "@octokit/rest": "^19.0.13",
     "discord-experiments": "^1.1.0",
-    "js-base64": "^3.7.5",
+    "js-base64": "^3.7.6",
     "prettier": "^2.8.8"
   }
 }
