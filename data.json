@@ -2480,24 +2480,11 @@
     },
     "rollout": {
       "hashKey": 3883768363,
-      "revision": 10,
+      "revision": 11,
       "populations": [
         {
           "buckets": {
-            "4": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        },
-        {
-          "buckets": {
-            "3": {
+            "-1": {
               "rollout": [
                 {
                   "min": 0,
