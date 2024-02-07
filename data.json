@@ -3977,9 +3977,10 @@
       "title": "Allowing testing secure frames for voice/video (Guilds)",
       "description": [
         "Control",
-        "Treatment 1: Can support secure frames for voice/video"
+        "Treatment 1: Can support secure frames for voice/video",
+        "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation"
       ],
-      "buckets": [0, 1],
+      "buckets": [0, 1, 2],
       "id": "2023-11_secure_frames_encryption_guilds",
       "hash": 2916044329
     },
