@@ -3673,8 +3673,12 @@
     "data": {
       "type": "guild",
       "title": "Allows guild to create recurring events",
-      "description": ["Control", "Treatment 1: Recurring Events are enabled"],
-      "buckets": [0, 1],
+      "description": [
+        "Control",
+        "Treatment 1: Recurring Events are enabled (Desktop Only)",
+        "Treatment 2: Recurring Events are enabled on Mobile + Desktop"
+      ],
+      "buckets": [0, 1, 2],
       "id": "2023-09_recurring_events",
       "hash": 2114978023
     },
@@ -3978,9 +3982,12 @@
       "description": [
         "Control",
         "Treatment 1: Can support secure frames for voice/video",
-        "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation"
+        "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
+        "Treatment 3: Can support secure frames above protocol version 8",
+        "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
+        "Treatment 5: Can support secure frames above protocol version 109 (MLS)"
       ],
-      "buckets": [0, 1, 2],
+      "buckets": [0, 1, 2, 3, 4, 5],
       "id": "2023-11_secure_frames_encryption_guilds",
       "hash": 2916044329
     },
@@ -4131,9 +4138,10 @@
       "title": "Activities in Text Guild",
       "description": [
         "Control",
-        "Treatment 1: enable Activities in text channels"
+        "Treatment 1: enable Activities in text channels",
+        "Treatment 3: enable Activities in text with the rocket button in chat input"
       ],
-      "buckets": [0, 1],
+      "buckets": [0, 1, 3],
       "id": "2023-11_activities_in_text_guild",
       "hash": 1689901851
     },
@@ -4162,8 +4170,13 @@
     "data": {
       "type": "guild",
       "title": "Hang Statuses",
-      "description": ["Control", "Treatment 1: enable hang statuses"],
-      "buckets": [0, 1],
+      "description": [
+        "Control",
+        "Treatment 1: enable hang statuses with no default",
+        "Treatment 2: enable hang statuses with default",
+        "Treatment 3: enable hang statuses with channel topic"
+      ],
+      "buckets": [0, 1, 2, 3],
       "id": "2023-11_enable_hang_status",
       "hash": 1033614739
     },
