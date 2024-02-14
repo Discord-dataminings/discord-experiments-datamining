@@ -4152,26 +4152,36 @@
     },
     "rollout": {
       "hashKey": 1033614739,
-      "revision": 3,
+      "revision": 4,
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 3400,
+                  "max": 6700
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "min": 6700,
+                  "max": 10000
+                }
+              ]
+            },
             "-1": {
               "rollout": [
                 {
                   "min": 0,
-                  "max": 10000
+                  "max": 100
                 }
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_id": 3,
-              "max_id": 1000
-            }
-          ]
+          "filters": []
         }
       ],
       "overrides": {
