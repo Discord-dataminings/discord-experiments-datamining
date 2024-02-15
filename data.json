@@ -4117,8 +4117,27 @@
     },
     "rollout": {
       "hashKey": 1689901851,
-      "revision": 0,
+      "revision": 1,
       "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 5000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1689901851,
+              "target": 1000
+            }
+          ]
+        },
         {
           "buckets": {
             "-1": {
