@@ -2949,51 +2949,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Bulk Banning Guild Members Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Bulk Banning Enabled"
-      ],
-      "buckets": [-1, 0, 1],
-      "id": "2023-08_guild_member_bulk_ban_experiment",
-      "hash": 2119968730
-    },
-    "rollout": {
-      "hashKey": 2119968730,
-      "revision": 4,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "435572461912719360",
-          "1011408760490692768",
-          "763838479293349899",
-          "809846768074227723",
-          "1149072796383711313",
-          "635413437647683596",
-          "996817886695927808"
-        ]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Guild Settings Improved Bans Page",
       "description": [
         "Not Eligible",
