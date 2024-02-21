@@ -3764,42 +3764,6 @@
       "populations": [
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": ["943265993613008967"]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 0,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["INTERNAL_EMPLOYEE_ONLY"]
-            }
-          ]
-        },
-        {
-          "buckets": {
             "-1": {
               "rollout": [
                 {
@@ -3814,6 +3778,7 @@
       ],
       "overrides": {
         "1": [
+          "943265993613008967",
           "1042148168726487101",
           "954473884273496124",
           "1042521715630166056",
