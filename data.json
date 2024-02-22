@@ -4258,6 +4258,71 @@
   {
     "data": {
       "type": "guild",
+      "title": "nvenc adaptive key frame interval",
+      "description": [
+        "Control",
+        "Treatment 1: enable adaptive key frame for nvenc"
+      ],
+      "buckets": [0, 1],
+      "id": "2024-01_nvencadaptivekeyframe",
+      "hash": 3032307853
+    },
+    "rollout": {
+      "hashKey": 3032307853,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 5000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3032307853,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
