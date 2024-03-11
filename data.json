@@ -4315,6 +4315,41 @@
   {
     "data": {
       "type": "guild",
+      "title": "Activities in Text Guild Experiment w/ new Entry Point",
+      "description": [
+        "Control",
+        "Treatment 1: Enable new entry point in Chat Input and App Launcher",
+        "Treatment 2: Enable new entry point in Chat Input, App Launcher, and Activities In Text",
+        "Treatment 3: Enable new entry point in Chat Input, App Launcher, Activities in Text, and Desktop Throbber"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2024-03_ait_guild_entry_point",
+      "hash": 1979035979
+    },
+    "rollout": {
+      "hashKey": 1979035979,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
