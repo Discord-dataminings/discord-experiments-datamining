@@ -2765,12 +2765,16 @@
     },
     "rollout": {
       "hashKey": 1487316075,
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
             "1": {
               "rollout": [
+                {
+                  "min": 0,
+                  "max": 5000
+                },
                 {
                   "min": 5000,
                   "max": 10000
