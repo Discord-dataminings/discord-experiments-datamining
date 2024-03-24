@@ -3526,7 +3526,7 @@
   {
     "data": {
       "type": "guild",
-      "title": "Polls",
+      "title": "Create Guild Polls",
       "description": [
         "Control",
         "Treatment 1: Enables creation of polls within a guild"
@@ -4100,6 +4100,97 @@
         }
       ],
       "overrides": {}
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "override krisp setting",
+      "description": [
+        "Control",
+        "Treatment 1: Force enable krisp",
+        "Treatment 2: Force disable krisp"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2024-03_krisp_sentiment",
+      "hash": 2156584863
+    },
+    "rollout": {
+      "hashKey": 2156584863,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["844690435841851453"],
+        "2": ["1220136599703130205"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Show coachmark for poll creation entry point",
+      "description": [
+        "Control",
+        "Treatment 1: Can show coachmark for poll creation entry point"
+      ],
+      "buckets": [0, 1],
+      "id": "2024-03_polls_coachmark",
+      "hash": 1325121101
+    },
+    "rollout": {
+      "hashKey": 1325121101,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 1,
+              "max_id": 200
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["1042148168726487101"]
+      }
     }
   },
   {
