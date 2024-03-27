@@ -4225,20 +4225,38 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 9500,
+                  "max": 10000
+                }
+              ]
+            },
             "-1": {
               "rollout": [
                 {
                   "min": 0,
-                  "max": 10000
+                  "max": 9000
                 }
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_id": 5000,
+              "max_id": null
+            },
+            {
+              "type": "guild_has_feature",
+              "guild_features": ["COMMUNITY"]
+            }
+          ]
         }
       ],
       "overrides": {
-        "1": ["1097548765818261534"]
+        "1": ["651595875897835540"]
       }
     }
   },
