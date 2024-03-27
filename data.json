@@ -4196,6 +4196,41 @@
   {
     "data": {
       "type": "guild",
+      "title": "advanced slowmode input",
+      "description": [
+        "Control",
+        "Treatment 1: enable the advanced slowmode input"
+      ],
+      "buckets": [0, 1],
+      "id": "2024-03_advanced_slowmode_input",
+      "hash": 1060797397
+    },
+    "rollout": {
+      "hashKey": 1060797397,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["1097548765818261534"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
