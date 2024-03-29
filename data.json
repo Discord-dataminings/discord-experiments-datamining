@@ -3005,54 +3005,6 @@
   {
     "data": {
       "type": "guild",
-      "title": "Community Endless Invites",
-      "description": [
-        "Control",
-        "Treatment 1: Causes invites to never expire (by default) in the Guild"
-      ],
-      "buckets": [0, 1],
-      "id": "2023-04_community_endless_invites",
-      "hash": 3964855818
-    },
-    "rollout": {
-      "hashKey": 3964855818,
-      "revision": 1,
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "min": 2000,
-                  "max": 4000
-                }
-              ]
-            },
-            "-1": {
-              "rollout": [
-                {
-                  "min": 4000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "guild_features": ["COMMUNITY"]
-            }
-          ]
-        }
-      ],
-      "overrides": {
-        "1": ["651595875897835540"]
-      }
-    }
-  },
-  {
-    "data": {
-      "type": "guild",
       "title": "Guest Voice Invites",
       "description": [
         "Control",
