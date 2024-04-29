@@ -4082,6 +4082,43 @@
   {
     "data": {
       "type": "guild",
+      "title": "Clans guild experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Show Guild Creation entrypoint - Generic",
+        "Treatment 2: Show Guild Creation entrypoint - Valorant",
+        "Treatment 3: Show Guild Creation entrypoint - Genshin Impact"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2024-04_clan_guilds",
+      "hash": 3402440853
+    },
+    "rollout": {
+      "hashKey": 3402440853,
+      "revision": 0,
+      "populations": [
+        {
+          "buckets": {
+            "-1": {
+              "rollout": [
+                {
+                  "min": 0,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": ["651595875897835540", "1069697996767371355"]
+      }
+    }
+  },
+  {
+    "data": {
+      "type": "guild",
       "title": "Activities Prerelease Overrides",
       "description": [
         "Control",
