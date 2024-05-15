@@ -3480,7 +3480,7 @@
             {
               "type": "guild_member_count_range",
               "min_id": 0,
-              "max_id": 25
+              "max_id": 200
             }
           ]
         }
