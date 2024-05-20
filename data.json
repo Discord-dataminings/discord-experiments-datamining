@@ -4091,25 +4091,6 @@
       "populations": [
         {
           "buckets": {
-            "7": {
-              "rollout": [
-                {
-                  "min": 5000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 2830925563,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
             "-1": {
               "rollout": [
                 {
@@ -4120,25 +4101,6 @@
             }
           },
           "filters": []
-        },
-        {
-          "buckets": {
-            "7": {
-              "rollout": [
-                {
-                  "min": 5000,
-                  "max": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 2830925563,
-              "target": 2000
-            }
-          ]
         },
         {
           "buckets": {
