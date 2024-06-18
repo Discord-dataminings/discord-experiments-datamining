@@ -3445,7 +3445,7 @@
     },
     "rollout": {
       "hashKey": 1570379293,
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "buckets": {
@@ -3483,6 +3483,27 @@
               "max_id": 200
             }
           ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "min": 500,
+                  "max": 1000
+                }
+              ]
+            },
+            "-1": {
+              "rollout": [
+                {
+                  "min": 1000,
+                  "max": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
         }
       ],
       "overrides": {
