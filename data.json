@@ -3492,9 +3492,12 @@
         "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
         "Treatment 5: Can support secure frames above protocol version 109 (MLS)",
         "Treatment 6: Can support secure frames above protocol version 10",
-        "Treatment 7: Can support secure frames above protocol version 110 (MLS)"
+        "Treatment 7: Can support secure frames above protocol version 110 (MLS)",
+        "Treatment 8: Can support secure frames above protocol version 11",
+        "Treatment 9: Can support secure frames above protocol version 111 (MLS)",
+        "Treatment 10: Can support secure frames above protocol version 112 (MLS)"
       ],
-      "buckets": [0, 1, 2, 3, 4, 5, 6, 7],
+      "buckets": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "id": "2023-11_secure_frames_encryption_guilds",
       "hash": 2916044329
     },
